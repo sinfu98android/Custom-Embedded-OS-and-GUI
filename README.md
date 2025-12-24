@@ -15,7 +15,7 @@ When I have time, I plan to modify the OS to run directly on x86 hardware, flash
 [OS src](https://github.com/sinfu98android/Custom-Embedded-OS-and-GUI/blob/main/PolOS.rar)  <br>
 [GUI src](https://github.com/sinfu98android/Custom-Embedded-OS-and-GUI/blob/main/PolGUI.rar)
 
-
+<br>
 If you’re interested in exploring or building upon it, feel free to use it! 
 
 ## Contact 

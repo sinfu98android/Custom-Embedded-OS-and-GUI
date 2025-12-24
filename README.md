@@ -1,4 +1,4 @@
-# Custom Embedded Operating System (Freeware Project)
+# Custom Embedded Operating System
 
 I worked in R&D for video software from 2002 to 2008, and during that time — around 2007–2008 — I began developing my own Operating System (OS) from scratch.<br>
 

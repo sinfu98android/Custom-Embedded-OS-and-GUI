@@ -1,14 +1,49 @@
 # Custom Embedded Operating System and GUI
 
-I worked in R&D for video software from 2002 to 2008, and during that time — around 2007–2008 — I began developing my own Operating System (OS) from scratch.<br>
+This repository contains a custom embedded Operating System and GUI
+developed from scratch during my work in video software R&D.
+<br>
+The system was designed to explore portable OS concepts under real
+execution constraints rather than to serve as a general-purpose platform.
 
-The OS started on AVR 8-bit CPUs, then was later ported to Toshiba 8-bit, Renesas R8C 16-bit, and ARM9 32-bit architectures. The GUI was implemented for the ARM9 platform, where I drove the LCD directly.
+## System overview
+The OS was initially implemented on AVR 8-bit MCUs and later ported across
+multiple architectures:<br>
+- AVR 8-bit<br>
+- Toshiba 8-bit<br>
+- Renesas R8C 16-bit<br>
+- ARM9 32-bit<br>
 
-This OS is freeware, created for anyone interested in learning about operating system or embedded system design. It’s portable across multiple CPUs, and I recommend using IAR Embedded Workbench for the best compile results. <br>
+Portability was achieved by isolating architecture-specific mechanisms
+such as context switching, interrupt handling, and ABI boundaries,
+allowing the core scheduling and system logic to remain largely unchanged.
 
-**The project was paused due to a significant personal life event, after which my professional focus shifted to applied systems engineering**. <br>
+## GUI subsystem
+A lightweight GUI was implemented on the ARM9 platform with direct LCD
+control. The focus was deterministic execution and minimal abstraction,
+rather than feature richness.
 
-When I have time, I plan to modify the OS to run directly on x86 hardware, flashing it into the BIOS SPI flash so it can boot without any external storage.<br>
+## Design intent
+
+This project emphasizes:<br>
+- separation of policy and mechanism<br>
+- explicit control over execution and memory<br>
+- deterministic behavior under constrained environments<br>
+- clarity at hardware–software boundaries<br>
+
+The code reflects real-world constraints typical of deeply embedded systems
+rather than modern convenience abstractions.
+
+## Project status
+
+Development paused due to a major personal life event, after which my
+professional focus shifted toward applied systems engineering.<br>
+
+The project is preserved here as an engineering artifact and learning
+reference.<br>
+
+Future work may include adapting the OS to boot directly on x86 hardware
+from SPI flash, without reliance on external storage.<br>
 
 #### Sourcecode
 
@@ -16,8 +51,7 @@ When I have time, I plan to modify the OS to run directly on x86 hardware, flash
 [GUI src](https://github.com/sinfu98android/Custom-Embedded-OS-and-GUI/blob/main/PolGUI.rar)
 
 <br>
-If you’re interested in exploring or building upon it, feel free to use it! 
+The archive format reflects the original development environment and
+tooling used at the time.<br>
 
-## Contact 
-[Linkedin - Yudi Hariyanto](https://www.linkedin.com/in/yudi-hariyanto-2732462a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) <br>
-Feel free to contact for questions, collaborations, or technical discussion
+This repository is shared for educational and exploratory purposes.<br>
